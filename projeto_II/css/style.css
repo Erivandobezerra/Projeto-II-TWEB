@@ -1,0 +1,264 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+/* -------------------         TELA 1         -------------------- */
+.container-menu-prin {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	height: 9.9vh;
+	width: 100vw;
+	gap: 10px;
+	display: grid;
+	position: fixed;
+	grid-template-areas: "logo ul-menu ul-menu";
+	z-index: 1;
+}
+.container-menu-prin a:hover {
+	background-color: #f0808061;
+	border-top-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	box-shadow: 10px 10px 8px #888888;
+}
+.cx-1 {
+	grid-area: logo;
+}
+.cx-1 img {
+	position: relative;
+	left: 1rem;
+	top: 5px;
+	width: 50px;
+	height: 50px;
+}
+.cx-2 {
+	grid-area: ul-menu;
+}
+.cx-2 ul {
+	margin-top: 5px;
+	padding-top: 1.2rem;
+	text-align: right;
+	list-style: none;
+	padding-right: 10px;
+}
+.cx- 2 ul li {
+	display: inline;
+}
+.cx-2 ul li a {
+	color: #000;
+	padding: 30px 20px;
+	
+}
+.content-pg1 {
+	display: grid;
+	background-image: url(../imgs/header.jpg);
+	background-size: 100%;
+	height: 100vh;
+	justify-content: center;
+	place-items: center;
+}
+.content-pg1 h1 {
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	align-self: end;
+}
+.content-pg1 a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.3rem;
+	background-color: #dc143c;
+	border-radius: 30px;
+	padding: 15px;
+	align-self: start;
+	margin-top: 15px;
+}
+/* -------------------         TELA 2         -------------------- */
+.content-2 {
+	background-color: #e6e6fa;
+	height: 100vh;
+	width: 100vw;
+}
+.grid-content-2 {
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	column-gap: 5%;
+	grid-template-columns: 48% 47%;
+	grid-template-areas:
+		". ."
+		". ."
+		". ."
+		". ."
+		". ."
+		"gc2-1 gc2-2"
+		"gc2-3 gc2-2"
+		"gc2-3 gc2-2"
+		"gc2-3 gc2-2"
+		"gc2-3 gc2-2"
+		"gc2-3 gc2-2"
+		"gc2-3 gc2-2"
+		"gc2-3 gc2-2"
+		"gc2-3 gc2-2"
+		"gc2-3 gc2-2";
+}
+.cx1 {
+	background-color: #f08080;
+	color: #fff;
+	grid-area: gc2-1;
+	padding-left: 30px;
+	font-size: 3rem;
+	height: 5rem;
+}
+.cx2 {
+	grid-area: gc2-2;
+}
+.cx2 img {
+	margin-top: 5rem;
+	background-size: 100%;
+	width: 80%;
+	height: 60%;
+	border-radius: 5rem;
+}
+.cx3 {
+	font-size: 1.5rem;
+	grid-area: gc2-3;
+	text-align: justify;
+	width: 78%;
+}
+/* -------------------         TELA 3         -------------------- */
+.content-3 {
+	height: 100vh;
+	width: 100vw;
+	padding-top: 10vh;
+}
+.grid-content-3 {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	row-gap: 1%;
+	column-gap: 1%;
+	grid-template-columns: 24% 24% 24% 24%;
+
+	grid-template-areas:
+		"gc3-cx01 gc3-cx01 . ."
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05"
+		"gc3-cx02 gc3-cx03 gc3-cx04 gc3-cx05";
+}
+.grid-content-3 img {
+	width: 100%;
+	height: 40%;
+}
+.grid-content-3 h1 {
+	font-size: 2rem;
+}
+.cx01 {
+	background-color: #f08080;
+	color: #fff;
+	grid-area: gc3-cx01;
+	padding-left: 30px;
+	font-size: 3rem;
+	height: 5rem;
+}
+.cx02 {
+	grid-area: gc3-cx02;
+}
+.cx03 {
+	grid-area: gc3-cx03;
+}
+.cx04 {
+	grid-area: gc3-cx04;
+}
+.cx05 {
+	grid-area: gc3-cx05;
+}
+/* -------------------         TELA 4         -------------------- */
+.content-4 {
+	background-color: #e6e6fa;
+	height: 100vh;
+	width: 100vw;
+	padding-top: 10vh;
+}
+.grid-content-4 {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.cx-01 h1 {
+	background-color: #f08080;
+	color: #fff;
+	grid-area: gc2-1;
+	padding-left: 30px;
+	font-size: 3rem;
+	height: 5rem;
+}
+.cx-01 a {
+	padding: 1.5rem 6rem;
+	background-color: #f08080;
+	color: grey;
+	border: solid 1px grey;
+}
+.cx-01 form {
+	margin-bottom: 5rem;
+	padding: 5rem 10rem;
+}
+.content-contact {
+	text-align: center;
+	margin-top: 2rem;
+}
+.input1 {
+	width: 30rem;
+	height: 2rem;
+	margin-bottom: 0.5rem;
+	background-color: #ececffc1;
+	border: 1px solid #808080;
+}
+.input2 {
+	width: 30rem;
+	height: 2rem;
+	margin-bottom: 0.5rem;
+	background-color: #ececffc1;
+	border: 1px solid #808080;
+}
+#msg {
+	background-color: #ececffc1;
+	border: 1px solid #808080;
+}
+.cx-02 {
+	padding: 5rem;
+}
+.cx-02 b {
+	margin-top: 1.5rem;
+	font-size: 3rem;
+}
+.cx-02 p {
+	margin-top: 1.5rem;
+	font-size: 1.2rem;
+}
+/* -------------------         FOOTER         -------------------- */
+.footer {
+	text-align: center;
+	height: 20%;
+	padding: 2rem;
+	color: #808080;
+}
